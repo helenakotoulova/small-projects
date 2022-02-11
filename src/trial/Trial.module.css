@@ -1,0 +1,51 @@
+* {
+  box-sizing: border-box;
+}
+
+.parent {
+    margin: 2rem auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80vw;
+  height: 40rem;
+  position: relative;
+  border:1px solid maroon;
+}
+
+.child {
+  background-color: transparent;
+  border: 2px solid black;
+  width: 20rem;
+  height: 20rem;
+  text-align: center;
+  font-weight: bold;
+  font-size: 10rem;
+  /*Pro alignovani textu:*/
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  /*Pozice toho */
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  transform: translate(50%,50%);
+  transition: all 0.3s ease-out;
+}
+
+.active {
+  background-color: blue;
+  opacity: 1;
+  transform: translateX(-50%);
+}
+
+.prev {
+  background-color: orange;
+  transform: translateX(-100%);
+}
+
+.next {
+  background-color: green;
+  transform: translateX(100%);
+}
