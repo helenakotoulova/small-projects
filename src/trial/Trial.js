@@ -1,8 +1,9 @@
 import classes from "./Trial.module.css";
 import { useState } from "react";
+import Navbar from "../navbar/Navbar";
 
 const Trial = () => {
-  const numbers = [0, 1, 2, 3];
+  const numbers = [0, 1, 2, 3,4,5];
 
   const checkIndex = (number) => {
     if (number === -1) {
@@ -31,7 +32,7 @@ const Trial = () => {
     });
   };
   return (
-      <>
+    <>
       <div className={classes.parent}>
         {numbers.map((number, numberIndex) => {
           let position = "next";
@@ -53,7 +54,7 @@ const Trial = () => {
       </div>
       <button onClick={prevHandler}>Prev</button>
       <button onClick={nextHandler}>Next</button>
-      </>
+    </>
   );
 };
 

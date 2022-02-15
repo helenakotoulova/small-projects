@@ -1,0 +1,81 @@
+.section {
+    background-color: #f8f1f1;
+    margin:0;
+    padding:1.5rem;
+    width:100%;
+    height:100%;
+}
+
+.title {
+    font-weight: bold;
+    font-size: 2rem;
+    text-align: center;
+    letter-spacing: 0.15rem;
+    margin-bottom:0;
+    margin:0;
+}
+
+.underline {
+    width:8rem;
+    height:0.3rem;
+    background:#1d95bd;
+    margin: 0.1rem auto;
+    border-radius: 0.1rem;
+}
+
+.mainSection {
+    width:80vw;
+    margin:auto;
+    display:grid;
+    grid-template-columns: 10rem 1fr;
+    padding:0.5rem;
+    gap:3rem;
+}
+
+
+.list {
+    list-style-type: none;
+    margin:0;
+    padding:0;
+    
+}
+
+.list li {
+    margin: 1rem 0.5rem;
+}
+
+.button {
+    font:inherit;
+    font-size:1.3rem;
+    font-weight: bold;
+    background-color: transparent;
+    color:lightblue;
+    border:transparent;
+    text-transform: capitalize;
+    letter-spacing:0.1rem;
+    cursor:pointer;
+    transition:all 0.3s ease-out;
+}
+
+.button:hover,
+.chosenButton {
+    border-left: 2px solid #1d95bd;;
+    color:#1d95bd;
+}
+
+.duty {
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
+}
+
+.duty p {
+    width:90%;
+    text-align: justify;
+    
+}
+
+.badge {
+    color:#1d95bd;
+    font-size:1.5rem;
+}

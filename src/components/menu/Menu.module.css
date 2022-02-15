@@ -1,0 +1,74 @@
+.section {
+  padding: 0.5rem 2rem;
+}
+
+.title {
+  font-weight: bold;
+  font-size: 2rem;
+  text-align: center;
+  letter-spacing: 0.15rem;
+  margin-bottom: 0;
+}
+
+.underline {
+  width: 8rem;
+  height: 0.3rem;
+  color: burlywood;
+  background: burlywood;
+  margin: 0.5rem auto;
+  border-radius: 0.1rem;
+}
+
+.main {
+  width: 90vw;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+  align-items: center;
+  column-gap: 0;
+  border: 1px solid black;
+}
+
+.list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid black;
+}
+
+.list li {
+  margin: 1rem 0.5rem;
+}
+
+.list button {
+  font: inherit;
+  font-size: 1.3rem;
+  font-weight: bold;
+  background-color: transparent;
+  color: burlywood;
+  border: transparent;
+  text-transform: capitalize;
+  letter-spacing: 0.1rem;
+  cursor: pointer;
+}
+
+.list button:hover {
+  color: #d3923e;
+  border-bottom: 2px solid #d3923e;
+}
+
+.duty {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  border: 1px solid black;
+}
+
+.duty p {
+  width: 80%;
+  text-align: justify;
+}

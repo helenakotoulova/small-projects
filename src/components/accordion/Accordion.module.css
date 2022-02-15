@@ -1,0 +1,41 @@
+.section {
+    width:80vw;
+    height:auto;
+    margin:3rem auto;
+    padding:2rem;
+    background-color: purple;
+    border-radius: 1rem;
+    color:white;
+    display:grid;
+    grid-template-columns: 15rem 1fr;
+}
+
+.question {
+    border:1px solid white;
+    border-radius:1rem;
+    padding:0rem 0.5rem;
+    margin: 0.5rem 0;
+}
+
+.questionIntro {
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
+}
+
+.questionIntro button {
+    width:2rem;
+    height:2rem;
+    background-color:white;
+    color:purple;
+    border:1px solid purple;
+    border-radius:0.5rem;
+    font-size: 1rem;
+    font-weight:bold;
+    cursor:pointer;
+    transition: all 0.3s ease-out;
+}
+
+.questionIntro button:hover {
+    background-color:#b895b8;
+}

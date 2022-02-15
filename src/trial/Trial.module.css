@@ -4,9 +4,10 @@
 
 .parent {
     margin: 2rem auto;
-  display: flex;
+  /* Tohle ted uz nepotrebuju*/
+  /*display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: center;*/
   width: 80vw;
   height: 40rem;
   position: relative;
@@ -26,26 +27,30 @@
   align-items: center;
   justify-content: center;
   opacity: 0;
-  /*Pozice toho */
+  /*Pozice toho childu - vsechny se budou prekryvat a budou primo na stredu */
   position: absolute;
-  top: 25%;
-  left: 50%;
-  transform: translate(50%,50%);
+  top: 50%;
+  left:50%;
+  transform: translate(-50%,-50%);
   transition: all 0.3s ease-out;
 }
 
 .active {
   background-color: blue;
   opacity: 1;
-  transform: translateX(-50%);
 }
 
 .prev {
   background-color: orange;
-  transform: translateX(-100%);
+  transform: translate(-150%, -50%); /*Nestaci posunou jen o 100%. transform v tehle tride totiz prepisuje ten transform
+  v te child tride. takze by se to posunulo o 100% vuci te left 50% a ne vuci te poloze transform: translate(-50%,-50%);
+  Kdyz bych ale ty tridy zapsala jako .child.prev tak by to asi fungovalo i s tou 100%.*/
+  opacity:0.2;
 }
 
 .next {
   background-color: green;
-  transform: translateX(100%);
+  transform: translate(50%,-50%); /* tu next posunu jen o 50% vuci te left 50%, opet se prepise ten trnsform v child tride,
+  dalsi vec: vsechny ty next polozky budou pres sebe. vsechny se posunuji o tech 50% vuci te poloze childu.*/
+  opacity:0.2;
 }

@@ -2,12 +2,44 @@
   box-sizing: border-box ;
 }
 
+:root {
+  --clr-bcg: #fff;
+  --clr-font: #282c35;
+  --clr-primary: #d23669;
+}
+
+html {
+  width:100%;
+  height:100%;
+  margin:0;
+  padding:0;
+  /*background-color: #f1f5f8;*/
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
-  box-sizing: border-box;
   padding:0;
+  width:100%;
+  height:100%;
+  transition: all 0.3s linear;
+}
+
+.dark-theme {
+  background-color:black;
+  color:white;
+}
+.light-theme {
+  background-color:white;
+  color:black;
+}
+
+#root {
+  padding:0;
+  width:100%;
+  height:100%;
+  margin:0;
 }
 

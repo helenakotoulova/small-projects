@@ -1,0 +1,78 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 4rem;
+  width: 100%;
+  z-index: 1; /*bez toho na to pak neslo klikat*/
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 0 2rem;
+  height:100%;
+}
+
+button {
+    cursor: pointer;
+}
+.list,
+.navbarButton {
+  display: none;
+}
+
+.sublinkButton link-btn {
+    background:white;
+}
+
+
+.showSideBar {
+    border: transparent;
+    background-color: transparent;
+    margin: 0 2rem;
+    font-size: 1rem;
+    font-weight: bold;
+  }
+
+@media screen and (min-width: 800px) {
+  .nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    height:100%;
+  }
+
+  .list li {
+    display:block;
+    height:100%;
+
+  }
+
+  .navbarButton,
+  .sublinkButton {
+    display:block;
+    height:100%;
+    width:10rem;
+    margin: 0;
+    font-size: 1rem;
+    font-weight: bold;
+    background-color:transparent;
+    border:transparent;
+  }
+
+  .showSideBar {
+    display: none;
+  }
+}

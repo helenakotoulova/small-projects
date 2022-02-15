@@ -1,0 +1,41 @@
+.submenu {
+    width:20rem;
+    height:fit-content;
+    background-color:white;
+    position:absolute;
+    top:4rem;
+    left:50%;
+    transform: translateX(-50%);
+    border-radius:1rem;
+    padding:1rem;
+    z-index:3;
+}
+
+.submenu::before {
+    content: '';
+    display:block;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-bottom: 5px solid white;
+    position:absolute;
+    top:-5px;
+    left:50%;
+    width:0;
+    height:0;
+    transform: translateX(-50%);
+}
+
+.submenu h4{
+    margin:0;
+    margin-bottom:0.5rem;
+}
+
+.list {
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    margin:0;
+}
+
+.list p {
+    margin:0;
+}

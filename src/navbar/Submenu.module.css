@@ -1,0 +1,25 @@
+.submenu {
+    position:absolute;
+    top:5rem;
+    width:10rem;
+    left:50%;
+    transform:translateX(-50%);
+    background-color:azure;
+    height:fit-content;
+}
+
+.list {
+    width:100%;
+    list-style:none;
+    margin:0;
+    padding:0;
+}
+
+.submenu button {
+    display:block;
+    background-color:transparent;
+    border: transparent;
+    margin:0.5rem 0;
+    font-size: 1rem;
+    font: inherit;
+}

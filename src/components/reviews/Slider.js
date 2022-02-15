@@ -14,14 +14,20 @@ const Slider = () => {
     }
   };
   const [index, setIndex] = useState(0);
-  /*
+  
   useEffect(() => {
-    const timer = setInterval(randomPerson, 3000);
+    const timer = setInterval(()=> {
+      let number = index +1;
+      const checkedNumber = checkIndex(number);
+      setIndex(checkedNumber);
+    }, 3000);
     return () => {
       clearInterval(timer);
     };
   }, [index]);
-*/
+
+  // TOHLE BYLO DOBRE KDYZ JSME NEMELI TEN SLIDE EFFECT
+  /*
   const randomPerson = () => {
     let number = Math.floor(Math.random() * data.length);
     if (number === index) {
@@ -30,7 +36,7 @@ const Slider = () => {
     const checkedNumber = checkIndex(number);
     setIndex(checkedNumber);
   };
-
+*/
   const prevHandler = () => {
     setIndex((prevIndex) => {
       const number = prevIndex - 1;
@@ -67,7 +73,7 @@ const Slider = () => {
               position = "lastSlide";
             }
             return (
-              <article key={person.id} className={classes[position]}>
+              <article key={person.id} className={`${classes.article} ${classes[position]}`}>
                 <div className={classes.imageContainer}>
                   <img src={person.image} className={classes.image} />
                   <span className={classes.badge}>
@@ -86,9 +92,9 @@ const Slider = () => {
                     }}
                   />
                 </div>
-                <button className={classes.surpriseBtn} onClick={randomPerson}>
+                {/*<button className={classes.surpriseBtn} onClick={randomPerson}>
                   Surprise Me!
-                </button>
+                  </button>*/}
               </article>
             );
           }
@@ -108,7 +114,3 @@ export default Slider;
 //  <article key={person.id} className={classes.activeSlide}> TAKHLE BUDOU VSECHNY MODRE
 //  <article key={person.id} className={classes[position]}> // takhle jen ten vybrany
 
-
-/*
-
-*/

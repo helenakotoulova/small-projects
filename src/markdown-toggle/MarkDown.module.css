@@ -1,0 +1,35 @@
+.section {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 90vw;
+  margin: 2rem auto;
+}
+
+.section form {
+  width: 30%;
+  margin: 0 1rem;
+}
+
+.section textarea {
+  width: 100%;
+  min-height: 50vw;
+  max-height: auto;
+  font-size: 1.5rem;
+  background-color: white;
+  border-radius: 0.5rem;
+}
+
+.section div {
+  width: 30%;
+  border: 1px solid black;
+  min-height: 50vw;
+  max-height: auto;
+  font-size: 1.5rem;
+  border-radius: 0.5rem;
+  background-color: white;
+}
+
+.article {
+    width:30%;  
+}
